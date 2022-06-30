@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: violet;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.sidebar{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sidebar__item{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+
+.content{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.5s ease-in;
+}
+.content__item:nth-child(1){
+    height: 100%;
+    width: 100%;
+    background: url('https://www.wallpaperflare.com/static/743/477/314/cityscape-yokohama-japan-city-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.content__item:nth-child(2){
+    height: 100%;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1595901688281-9cef114adb0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.content__item:nth-child(3){
+    height: 100%;
+    width: 100%;
+    background: url('https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG9uZG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.control{
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    left: 24.5%;
+    top: 30%;
+}
+.control__btn{
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(233, 233, 233);
+    width: 60px;
+    cursor: pointer;
+    
+}
+.control__btn_up{
+    margin-bottom: 35px;
+    margin-right: 5px;
+}
+.control__btn_down{
+    margin-top: 35px;
+    margin-left: 5px;
+}

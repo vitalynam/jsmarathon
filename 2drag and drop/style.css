@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.col__header{
+    width: 150px;
+    padding: 10px 10px;
+    background-color: rgb(126, 95, 155);
+    border-radius: 10px;
+    margin: 0px 10px;
+    color: white;
+    text-align: center;
+}
+.placeholder{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    min-height: 100px ;
+}
+.item{
+    color: white;
+    background-color: rgb(66, 78, 95);
+    border-radius: 50px;
+    padding: 20px;
+    cursor: grabbing;
+    text-align: center;
+}
+
+
+.hold{
+    border: 2px solid rgb(97, 253, 6);
+}
+.hide{
+    display: none;
+}
+.hovered{
+    border-top: 2px solid violet;
+}

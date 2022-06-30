@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    height: 100vh;
+    width: 100%;
+    background: url(https://www.study.ru/uploads/server/a5rRZawzxshV7NSA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider__box{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+.slider__item{
+    height: 80vh;
+    border-radius: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    flex: 1;
+    position: relative;
+    transition: all 500ms ease-in-out ;
+}
+.slider__item:nth-child(1){
+    background: url(https://www.eli.ru/img/goods/medium/e115fl-e11fl-e121fl-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.slider__item:nth-child(2){
+    background: url(https://images.unian.net/photos/2020_12/1607508161-4057.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider__item:nth-child(3){
+    background: url(https://cdn1.ozone.ru/s3/multimedia-5/wc1200/6030255377.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider__item:nth-child(4){
+    background: url(https://images.unian.net/photos/2020_12/1607508161-4057.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider__item:nth-child(5){
+    background: url(https://conncept.ru/wp-content/uploads/2019/12/10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider__item h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.slider__item.active{
+    flex: 6;
+}
+.slider__item.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
